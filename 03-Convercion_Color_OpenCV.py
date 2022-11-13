@@ -14,6 +14,10 @@ cv2.namedWindow("RGB", cv2.WINDOW_NORMAL)
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 h, s, v = cv2.split(hsv) ## Dividimos la imagen en los canales hsv
 
+### Tambien podemos hacer la conversion de imagenes en escala de grises
+### Una vez cargada la imagenPi
+grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
 ### De la siguiente forma podemos filtrar cada uno de los canales rgb de la imagen.
 while True:
     key = cv2.waitKey()
@@ -34,6 +38,9 @@ while True:
         cv2.imshow("RGB", s)
     elif key == ord("v"):
         cv2.imshow("RGB", v)
+    elif key == ord("p"):
+        cv2.imshow("RGB",grayscale)
+
     else:
         break
 ## Destruye todas las ventanas creadas
