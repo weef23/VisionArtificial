@@ -24,7 +24,7 @@ for i in range(alto):
 ### Modificamos el color de todos los pixeles con excepcion del pixel blanco
 for i in range(alto):
     for j in range(ancho):
-        pixel = imagenObscura[i, j]
+        pixel = imagenObscura[i, j] ## Obtenemos la imagen pixel a pixel
         if pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0:
             ## 255, 0, 0 Color Azul
             ## 0 , 255, 0 Color Verde
