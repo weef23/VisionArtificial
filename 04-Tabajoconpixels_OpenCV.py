@@ -24,13 +24,16 @@ for i in range(alto):
 ### Modificamos el color de todos los pixeles con excepcion del pixel blanco
 for i in range(alto):
     for j in range(ancho):
-        pixel[i, j] = imagenObscura[i, j]
-
+        pixel = imagenObscura[i, j]
         if pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0:
-            imagenObscura = [0, 0, 255] ## Color azul
+            ## 255, 0, 0 Color Azul
+            ## 0 , 255, 0 Color Verde
+            ## 0, 0, 255 Colo Rojo
+            imagenObscura[i, j] = [255, 0, 0] ## Color azul
+
 ##############################################################################################################
 ## Creamos una ventana vacia para mostrar la imagen por pantalla
 cv2.namedWindow("black", cv2.WINDOW_NORMAL)
 cv2.imshow("black", imagenObscura)
-key = cv2.waitKey()
+cv2.waitKey()
 cv2.destroyAllWindows()
