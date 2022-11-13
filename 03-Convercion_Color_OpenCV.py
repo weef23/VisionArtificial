@@ -10,6 +10,9 @@ r,g,b = cv2.split(img)
 img = cv2.merge((r, g, b)) ## Unir las imagenes
 ## Creamos la ventana vacia
 cv2.namedWindow("RGB", cv2.WINDOW_NORMAL)
+## Espacio de color HSV, es mayormente utilizado para la deteccion de objetos mediante color.
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+h, s, v = cv2.split(hsv) ## Dividimos la imagen en los canales hsv
 
 ### De la siguiente forma podemos filtrar cada uno de los canales rgb de la imagen.
 while True:
@@ -23,6 +26,14 @@ while True:
         cv2.imshow("RGB", r)
     elif key == ord("c"):
         cv2.imshow("RGB", img)
+    elif key == ord("l"):
+        cv2.imshow("RGB", hsv)
+    elif key == ord("h"):
+        cv2.imshow("RGB", h)
+    elif key == ord("s"):
+        cv2.imshow("RGB", s)
+    elif key == ord("v"):
+        cv2.imshow("RGB", v)
     else:
         break
 ## Destruye todas las ventanas creadas
