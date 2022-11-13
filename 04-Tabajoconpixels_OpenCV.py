@@ -28,3 +28,9 @@ for i in range(alto):
 
         if pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0:
             imagenObscura = [0, 0, 255] ## Color azul
+##############################################################################################################
+## Creamos una ventana vacia para mostrar la imagen por pantalla
+cv2.namedWindow("black", cv2.WINDOW_NORMAL)
+cv2.imshow("black", imagenObscura)
+key = cv2.waitKey()
+cv2.destroyAllWindows()
