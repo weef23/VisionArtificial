@@ -29,6 +29,8 @@ for i in range(alto):
             ## 255, 0, 0 Color Azul
             ## 0 , 255, 0 Color Verde
             ## 0, 0, 255 Colo Rojo
+            ## A partir de las combinaciones anteriores podemos formar colores.
+
             imagenObscura[i, j] = [255, 0, 0] ## Color azul
 
 ##############################################################################################################
