@@ -1,4 +1,4 @@
-################### OPERACIONES /TRANSFORMACION DE UNA EMPRESA ##########################
+################### OPERACIONES/TRANSFORMACION DE UNA EMPRESA ##########################
 import numpy as np
 import cv2
 
