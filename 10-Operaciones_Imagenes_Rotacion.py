@@ -4,7 +4,7 @@ import cv2
 #######################################################################################################################
 ### Traslacion de una imagen usando OpenCV
 img = cv2.imread("./Images/1.jpg")
-imagen2 = cv2.resize(img, (200, 200)) ## Redimensionamos la imagen a 100 x 50
+imagen2 = cv2.resize(img, (200, 200)) ## Redimensionamos la imagen a 200 x 200
 alto, ancho, canal = imagen2.shape
 
 ## Definimos el angulo de rotacion el centro y la escala
