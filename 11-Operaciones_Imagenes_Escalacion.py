@@ -1,5 +1,4 @@
 import numpy as np
-import imutils as im
 import cv2
 #######################################################################################################################
 ### Traslacion de una imagen usando OpenCV
