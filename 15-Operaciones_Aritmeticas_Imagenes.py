@@ -17,16 +17,23 @@ imagen2 = cv2.rectangle(imagen2, (150, 150), (300, 300), (255, 0, 0), cv2.FILLED
 imagenSuma = cv2.add(imagen1, imagen2)
 ## Resta de imagenes
 imagenResta = cv2.subtract(imagen1, imagen2)
+## Multiplicacion de imagenes
+imagenMultiplicacion = cv2.multiply(imagen1, imagen2)
+## Division de Imagenes
+imagenDivision = cv2.divide(imagen1, imagen2)
 ########################################################################################################################
 cv2.namedWindow("imagen1", cv2.WINDOW_NORMAL)
 cv2.namedWindow("imagen2", cv2.WINDOW_NORMAL)
 cv2.namedWindow("imagenSuma", cv2.WINDOW_NORMAL)
 cv2.namedWindow("imagenResta", cv2.WINDOW_NORMAL)
+cv2.namedWindow("imagenMultiplicacion", cv2.WINDOW_NORMAL)
+cv2.namedWindow("imagenDivision", cv2.WINDOW_NORMAL)
 ########################################################################################################################
 cv2.imshow("imagen1", imagen1)
 cv2.imshow("imagen2", imagen2)
 cv2.imshow("imagenSuma", imagenSuma)
 cv2.imshow("imagenResta", imagenResta)
+cv2.imshow("imagenDivision", imagenDivision)
 ########################################################################################################################
 cv2.waitKey()
 cv2.destroyAllWindows()
