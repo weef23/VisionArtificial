@@ -18,6 +18,6 @@ color = ('b', 'g', 'r')
 ## Lo que estamos haciendo en esta parte es con la funcion enumerate convertir la variable color en los siguiente
 ## 0 : b, 1: g, 2: r esto para poder generar el histograma por cada canal de la imagen
 for i, col in enumerate(color):
-    hist = cv2.calcHist([I], [i], None, [256], [0, 255])
+    hist = cv2.calcHist([img], [i], None, [256], [0, 255])
     ptl.plot(hist, color=col)
     ptl.xlim([0, 256]) ## Este es el rango de valores de los colores de la imagen.
