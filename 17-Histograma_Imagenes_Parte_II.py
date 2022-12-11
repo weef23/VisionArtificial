@@ -22,6 +22,7 @@ for i, col in enumerate(color):
     hist = cv2.calcHist([img], [i], None, [256], [0, 255])
     ptl.plot(hist, color=col)
     ptl.xlim([0, 256]) ## Este es el rango de valores de los colores de la imagen.
+    plt.show()
 ########################################################################################################################
 #### Uso de mascara para el calculo de histogramas
 mascara = np.zeros(img.shape[:2], np.uint8)
